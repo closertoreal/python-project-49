@@ -23,10 +23,11 @@ def interface() -> Tuple[str, str]:
 
 
 def welcome_user():
+    print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f"Hello, {name}!")
     counter_for_right_answers = 0
-    print(f'Answer \"yes\" if the number is even, otherwise answer \"no\".')
+    print('Answer \"yes\" if the number is even, otherwise answer \"no\".')
     while counter_for_right_answers < 3:
         random_number, text_answer = interface()
         print(f'\n Question: {random_number}.')
@@ -39,9 +40,4 @@ def welcome_user():
     print(f'Congratulations, {name}')
 
 
-def main():
-    print('Welcome to the Brain Games!')
-    welcome_user()
-
-
-main()
+welcome_user()
