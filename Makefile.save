@@ -1,10 +1,11 @@
-setup: lint build publish package-install brain-games
 
 install:
 	poetry install
 
 lint:
 	poetry run flake8 brain_games
+setup: build publish package-install brain-games
+
 
 build:
 	poetry build
