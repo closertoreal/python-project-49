@@ -40,4 +40,5 @@ def welcome_user():
     print(f'Congratulations, {name}')
 
 
-welcome_user()
+def main():
+    welcome_user()
