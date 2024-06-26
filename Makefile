@@ -1,4 +1,4 @@
-setup: lint build publish package-install
+setup: install lint build publish package-install
 
 install:
 	poetry install

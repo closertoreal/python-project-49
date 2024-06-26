@@ -53,13 +53,11 @@ def engine(game_type):
     print(game_question(game_type))
     while counter_for_right_answers < 3:
         expression, right_answer = calculations(game_type)
-        print(f'right_answer - {right_answer}')
         print(f'\n Question: {expression}.')
         player_answer = prompt.string('Your answer: ')
-        if player_answer == right_answer:
+        if str(player_answer) == str(right_answer):
             print('Correct!')
             counter_for_right_answers += 1
-            print(f'counter_for_right_answers - {counter_for_right_answers}')
     print(f'Congratulations, {name}')
 
 
