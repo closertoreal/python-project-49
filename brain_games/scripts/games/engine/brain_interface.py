@@ -1,13 +1,14 @@
 import random
 
 import prompt
-from random import randint, choice
+from random import randint
 
 
 def check_random(random_number) -> bool:
     if random_number % 2 == 0:
         return True
     return False
+
 
 def calculate_expression(number_1, number_2, operator) -> int:
     if operator == '+':
@@ -44,6 +45,7 @@ def game_question(game_type):
     if game_type == 'brain_calc':
         game_question = 'What is the result of the expression?'
     return game_question
+
 
 def engine(game_type):
     print('Welcome to the Brain Games!')

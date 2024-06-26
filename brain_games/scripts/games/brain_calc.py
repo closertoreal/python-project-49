@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 
+from brain_games.scripts.games.engine import brain_interface
 
-import brain_interface
 
 def main():
     game_type = 'brain_calc'
     brain_interface.main(game_type)
 
-main()
+
+if __name__ == '__main__':
+    main()
