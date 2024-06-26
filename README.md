@@ -5,4 +5,4 @@
 
 [my asciinema cast](https://asciinema.org/a/OS6uT7xbTTRs4ak5CLlbK8HdV)
 
-[asciinema 6th step](https://asciinema.org/a/COVhkJGTRdCC3jSSIsHAf4chg)
+[asciinema 6th step](https://asciinema.org/a/dE7Ek4YyxutpnMmd8wOhFAGGP)

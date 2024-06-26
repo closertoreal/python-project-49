@@ -60,6 +60,10 @@ def engine(game_type):
         if str(player_answer) == str(right_answer):
             print('Correct!')
             counter_for_right_answers += 1
+        if game_type == 'brain_calc':
+            if str(player_answer) != str(right_answer):
+                print(f'{str(player_answer)} is wrong answer ;(. Correct answer was {str(right_answer)}.'
+                      f'Let\'s try again, {name}!')
     print(f'Congratulations, {name}')
 
 
