@@ -8,7 +8,8 @@ def check_random(random_number, game_type) -> bool:
         case 'brain_even':
             if random_number % 2 == 0:
                 answer = 'yes'
-            answer = 'no'
+            else:
+                answer = 'no'
         case 'brain_prime':
             if random_number % 2 == 0 and random_number != 2:
                 answer = 'no'
@@ -100,10 +101,13 @@ def engine(game_type):
         if str(player_answer) == str(right_answer):
             print('Correct!')
             counter_for_right_answers += 1
+        else:
+            counter_for_right_answers = 0
         if game_type in ('brain_calc', 'brain_gcd', 'brain_progression', 'brain_prime'):
             if str(player_answer) != str(right_answer):
                 print(f'{str(player_answer)} is wrong answer ;(. Correct answer was {str(right_answer)}.'
                       f'Let\'s try again, {name}!')
+                counter_for_right_answers = 0
     print(f'Congratulations, {name}')
 
 
