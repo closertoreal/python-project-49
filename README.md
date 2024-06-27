@@ -10,3 +10,5 @@
 [asciinema 7th step](https://asciinema.org/a/8UinL7sEUbIhdKugrX9UADxhI)
 
 [asciinema 8th step](https://asciinema.org/a/LBgH7SnnJpLx2kheuVuuf4gM0)
+
+[asciinema 9th step](https://asciinema.org/a/4EnO2ICaAaOndmfyLUTQUSoi0)

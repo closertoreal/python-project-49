@@ -1,13 +1,24 @@
 import random
-
-import prompt
 from random import randint
+import prompt
 
 
-def check_random(random_number) -> bool:
-    if random_number % 2 == 0:
-        return True
-    return False
+def check_random(random_number, game_type) -> bool:
+    match game_type:
+        case 'brain_even':
+            if random_number % 2 == 0:
+                answer = 'yes'
+            answer = 'no'
+        case 'brain_prime':
+            if random_number % 2 == 0 and random_number != 2:
+                answer = 'no'
+            elif random_number % 3 == 0 and random_number != 3:
+                answer = 'no'
+            elif random_number % 5 == 0 and random_number != 5:
+                answer = 'no'
+            else:
+                answer = 'yes'
+    return answer
 
 
 def calculate_expression(number_1, number_2, operator) -> int:
@@ -22,13 +33,9 @@ def calculate_expression(number_1, number_2, operator) -> int:
 
 def calculations(game_type):
     match game_type:
-        case 'brain_even':
+        case 'brain_even' | 'brain_prime':
             random_number = randint(1, 100)
-            check = check_random(random_number)
-            if check is True:
-                right_answer = 'yes'
-            else:
-                right_answer = 'no'
+            right_answer = check_random(random_number, game_type)
             expression = str(random_number)
         case 'brain_calc':
             list_operators = ['+', '-', '*']
@@ -75,6 +82,8 @@ def game_question(game_type):
             game_question = 'Find the greatest common divisor of given numbers.'
         case 'brain_progression':
             game_question = 'What number is missing in the progression?'
+        case 'brain_prime':
+            game_question = 'Answer "yes" if given number is prime. Otherwise answer "no".'
     return game_question
 
 
@@ -91,7 +100,7 @@ def engine(game_type):
         if str(player_answer) == str(right_answer):
             print('Correct!')
             counter_for_right_answers += 1
-        if game_type == 'brain_calc' or game_type == 'brain_gcd' or game_type == 'brain_progression':
+        if game_type in ('brain_calc', 'brain_gcd', 'brain_progression', 'brain_prime'):
             if str(player_answer) != str(right_answer):
                 print(f'{str(player_answer)} is wrong answer ;(. Correct answer was {str(right_answer)}.'
                       f'Let\'s try again, {name}!')
