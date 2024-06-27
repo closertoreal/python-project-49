@@ -3,6 +3,10 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/a6cc2edafa0b4c95cb10/maintainability)](https://codeclimate.com/github/closertoreal/python-project-49/maintainability)
 
-[my asciinema cast](https://asciinema.org/a/OS6uT7xbTTRs4ak5CLlbK8HdV)
+[asciinema 5th step](https://asciinema.org/a/OS6uT7xbTTRs4ak5CLlbK8HdV)
 
 [asciinema 6th step](https://asciinema.org/a/dE7Ek4YyxutpnMmd8wOhFAGGP)
+
+[asciinema 7th step](https://asciinema.org/a/8UinL7sEUbIhdKugrX9UADxhI)
+
+[asciinema 8th step](https://asciinema.org/a/LBgH7SnnJpLx2kheuVuuf4gM0)
