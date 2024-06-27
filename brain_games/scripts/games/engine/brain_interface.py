@@ -43,7 +43,7 @@ def calculations(game_type):
             operator = random.choice(list_operators)
             number_1 = random.randint(1, 100)
             number_2 = random.randint(1, 100)
-            expression = str(number_1) + operator + str(number_2)
+            expression = str(number_1) + ' ' + operator + ' ' + str(number_2)
             right_answer = calculate_expression(number_1, number_2, operator)
         case 'brain_gcd':
             number_1 = random.randint(1, 100)
