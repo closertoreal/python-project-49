@@ -47,16 +47,34 @@ def calculations(game_type):
                 if number_1 % counter == 0 and number_2 % counter == 0:
                     right_answer = counter
                 counter -= 1
+        case 'brain_progression':
+            progression = []
+            list_length = random.randint(5, 10)
+            progression_step = random.randint(1, 100)
+            swap = random.randint(1, 100)
+            progression.append(swap)
+            item_to_remove = random.randint(1, list_length)
+            while list_length >= 0:
+                swap += progression_step
+                progression.append(str(swap))
+                list_length -= 1
+            right_answer = progression[item_to_remove]
+            progression[0] = str(progression[0])
+            progression[item_to_remove] = '..'
+            expression = ' '.join(progression)
     return expression, right_answer
 
 
 def game_question(game_type):
-    if game_type == 'brain_even':
-        game_question = 'Answer \"yes\" if the number is even, otherwise answer \"no\".'
-    if game_type == 'brain_calc':
-        game_question = 'What is the result of the expression?'
-    if game_type == 'brain_gcd':
-        game_question = 'Find the greatest common divisor of given numbers.'
+    match game_type:
+        case 'brain_even':
+            game_question = 'Answer \"yes\" if the number is even, otherwise answer \"no\".'
+        case 'brain_calc':
+            game_question = 'What is the result of the expression?'
+        case 'brain_gcd':
+            game_question = 'Find the greatest common divisor of given numbers.'
+        case 'brain_progression':
+            game_question = 'What number is missing in the progression?'
     return game_question
 
 
@@ -73,7 +91,7 @@ def engine(game_type):
         if str(player_answer) == str(right_answer):
             print('Correct!')
             counter_for_right_answers += 1
-        if game_type == 'brain_calc' or game_type == 'brain_gcd':
+        if game_type == 'brain_calc' or game_type == 'brain_gcd' or game_type == 'brain_progression':
             if str(player_answer) != str(right_answer):
                 print(f'{str(player_answer)} is wrong answer ;(. Correct answer was {str(right_answer)}.'
                       f'Let\'s try again, {name}!')

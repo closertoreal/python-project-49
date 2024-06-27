@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 
+
 from brain_games.scripts.games.engine import brain_interface
 
 
 def main():
-    game_type = 'brain_gcd'
+    game_type = 'brain_progression'
     brain_interface.main(game_type)
 
 
