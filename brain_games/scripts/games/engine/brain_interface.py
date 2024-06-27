@@ -108,7 +108,7 @@ def engine(game_type):
                 print(f'{str(player_answer)} is wrong answer ;(. Correct answer was {str(right_answer)}.'
                       f'Let\'s try again, {name}!')
                 counter_for_right_answers = 0
-    print(f'Congratulations, {name}')
+    print(f'Congratulations, {name}!')
 
 
 def main(game_type):
