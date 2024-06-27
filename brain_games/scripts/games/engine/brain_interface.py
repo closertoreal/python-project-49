@@ -76,16 +76,16 @@ def calculations(game_type):
 def game_question(game_type):
     match game_type:
         case 'brain_even':
-            game_question = 'Answer \"yes\" if the number is even, otherwise answer \"no\".'
+            q = 'Answer "yes" if the number is even, otherwise answer "no".'
         case 'brain_calc':
-            game_question = 'What is the result of the expression?'
+            q = 'What is the result of the expression?'
         case 'brain_gcd':
-            game_question = 'Find the greatest common divisor of given numbers.'
+            q = 'Find the greatest common divisor of given numbers.'
         case 'brain_progression':
-            game_question = 'What number is missing in the progression?'
+            q = 'What number is missing in the progression?'
         case 'brain_prime':
-            game_question = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-    return game_question
+            q = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    return q
 
 
 def engine(game_type):
@@ -102,8 +102,9 @@ def engine(game_type):
             print('Correct!')
             counter_for_right_answers += 1
         else:
-            print(f'{str(player_answer)} is wrong answer ;(. Correct answer was {str(right_answer)}.'
-                  f'Let\'s try again, {name}!')
+            print(f"{str(player_answer)} is wrong answer ;(. "
+                  f"Correct answer was {str(right_answer)}. "
+                  f"Let\'s try again, {name}!")
             return
     print(f'Congratulations, {name}!')
 
