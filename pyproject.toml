@@ -1,8 +1,12 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "first project on Hexlet"
+classifiers = [
+	"Development Status :: 5 - Production/Stable"
+]
 authors = ["closertoreal <ns17143@ya.ru>"]
+repository = "https://github.com/closertoreal/python-project-49"
 readme = "README.md"
 packages = [
   { include = "brain_games" },
