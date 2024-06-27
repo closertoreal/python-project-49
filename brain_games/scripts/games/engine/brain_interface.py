@@ -103,7 +103,7 @@ def engine(game_type):
             counter_for_right_answers += 1
         else:
             print(f'{str(player_answer)} is wrong answer ;(. Correct answer was {str(right_answer)}.'
-            f'Let\'s try again, {name}!')
+                  f'Let\'s try again, {name}!')
             return
     print(f'Congratulations, {name}!')
 
