@@ -4,8 +4,7 @@ from brain_games.scripts.games.engine import brain_interface
 
 
 def main():
-    game_type = 'brain_calc'
-    brain_interface.main(game_type)
+    brain_interface.main('brain_calc')
 
 
 if __name__ == '__main__':
