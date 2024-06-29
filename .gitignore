@@ -2,3 +2,6 @@
 /.idea/
 *.cast
 /__pycache__/
+/dist/
+/pycache/
+
