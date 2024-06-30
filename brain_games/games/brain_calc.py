@@ -1,10 +1,11 @@
 from brain_games import brain_interface
-from random import randint
+import random
+
 
 question = 'What is the result of the expression?'
 
 
-def calculate_answer(expression):
+def calculate_answer(number_1, number_2, operator):
     if operator == '+':
         answer = number_1 + number_2
     elif operator == '-':

@@ -1,4 +1,5 @@
-from random import randint
+import random
+
 
 question = 'Find the greatest common divisor of given numbers.'
 

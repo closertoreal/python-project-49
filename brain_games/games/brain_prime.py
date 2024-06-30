@@ -1,21 +1,22 @@
 from random import randint
 
-question = 'What number is missing in the progression?'
+question = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+
+def calculate_answer(expression):
+    if expression % 2 == 0 and expression != 2:
+        answer = 'no'
+    elif expression % 3 == 0 and expression != 3:
+        answer = 'no'
+    elif expression % 5 == 0 and expression != 5:
+        answer = 'no'
+    else:
+        answer = 'yes'
+    return answer
 
 
 def create_question():
-    progression = []
-    list_length = random.randint(5, 10)
-    progression_step = random.randint(1, 100)
-    swap = random.randint(1, 100)
-    progression.append(swap)
-    item_to_remove = random.randint(1, list_length)
-    while list_length >= 0:
-        swap += progression_step
-        progression.append(str(swap))
-        list_length -= 1
-    right_answer = progression[item_to_remove]
-    progression[0] = str(progression[0])
-    progression[item_to_remove] = '..'
-    expression = ' '.join(progression)
+    expression = randint(1, 100)
+    right_answer = calculate_answer(expression)
+    expression = str(expression)
     return expression, right_answer

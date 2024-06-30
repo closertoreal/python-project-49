@@ -1,5 +1,6 @@
 from random import randint
 
+
 question = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
@@ -16,7 +17,3 @@ def create_question():
     right_answer = calculate_answer(expression)
     expression = str(expression)
     return expression, right_answer
-
-
-
-
