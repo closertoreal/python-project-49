@@ -16,4 +16,3 @@ def create_question():
             right_answer = counter
             return expression, right_answer
         counter -= 1
-
