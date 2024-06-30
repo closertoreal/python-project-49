@@ -1,12 +1,17 @@
-#!/usr/bin/env python3
+from random import randint
 
-from brain_games.scripts.games.engine import brain_interface
-
-
-def main():
-    game_type = 'brain_gcd'
-    brain_interface.main(game_type)
+question = 'Find the greatest common divisor of given numbers.'
 
 
-if __name__ == '__main__':
-    main()
+def create_question():
+    number_1 = random.randint(1, 100)
+    number_2 = random.randint(1, 100)
+    expression = str(number_1) + ' ' + str(number_2)
+    counter = min(number_1, number_2)
+    min_gcd = 1
+    right_answer = min_gcd
+    while counter > 0 and min_gcd == 1:
+        if number_1 % counter == 0 and number_2 % counter == 0:
+            right_answer = counter
+        counter -= 1
+    return expression, right_answer

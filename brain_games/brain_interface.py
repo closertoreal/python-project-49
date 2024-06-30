@@ -1,17 +1,15 @@
-import random
-from random import randint
 import prompt
-from brain_games.games import brain_even
 
 
-def engine(game_question, expression, right_answer):
+def run_game(game_question, create_question):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f"Hello, {name}!")
     counter_for_right_answers = 0
     print(game_question)
-    while counter_for_right_answers < 3:
-        expression, right_answer = brain_even.create_question()
+    number_of_rounds = 3
+    while counter_for_right_answers < number_of_rounds:
+        expression, right_answer = create_question()
         print(f'\nQuestion: {expression}.')
         player_answer = prompt.string('Your answer: ')
         if str(player_answer) == str(right_answer):
@@ -25,5 +23,5 @@ def engine(game_question, expression, right_answer):
     print(f'Congratulations, {name}!')
 
 
-def main(game_question, expression, right_answer):
-    engine(game_question, expression, right_answer)
+def main(game_question, create_question):
+    run_game(game_question, create_question)

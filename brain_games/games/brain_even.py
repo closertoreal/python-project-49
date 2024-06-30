@@ -1,8 +1,7 @@
-#!/usr/bin/env python3
-
-
-from brain_games import brain_interface
 from random import randint
+
+question = 'Answer "yes" if the number is even, otherwise answer "no".'
+
 
 def calculate_answer(expression):
     if expression % 2 == 0:
@@ -19,11 +18,5 @@ def create_question():
     return expression, right_answer
 
 
-def main():
-    question = 'Answer "yes" if the number is even, otherwise answer "no".'
-    expression, right_answer = create_question()
-    brain_interface.main(question, expression, right_answer)
 
 
-if __name__ == '__main__':
-    main()

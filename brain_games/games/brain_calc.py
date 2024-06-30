@@ -1,12 +1,10 @@
-#!/usr/bin/env python3
-
-
 from brain_games import brain_interface
-import random
 from random import randint
 
+question = 'What is the result of the expression?'
 
-def calculate_answer(number_1, number_2, operator):
+
+def calculate_answer(expression):
     if operator == '+':
         answer = number_1 + number_2
     elif operator == '-':
@@ -26,12 +24,5 @@ def create_question():
     return expression, right_answer
 
 
-
 def main():
-    question = 'What is the result of the expression?'
-    expression, right_answer = create_question()
-    brain_interface.main(question, expression, right_answer)
-
-
-if __name__ == '__main__':
-    main()
+    brain_interface.main(question, create_question)
