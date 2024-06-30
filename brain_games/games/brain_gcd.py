@@ -14,5 +14,6 @@ def create_question():
     while counter > 0 and min_gcd == 1:
         if number_1 % counter == 0 and number_2 % counter == 0:
             right_answer = counter
+            return expression, right_answer
         counter -= 1
-    return expression, right_answer
+
