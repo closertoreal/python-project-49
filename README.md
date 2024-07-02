@@ -24,15 +24,23 @@ To install the game follow the instructions.
 
 5. Watch games in action in the videos below:
 
-brain-even:
-<script src="https://asciinema.org/a/fXq8l0d6txMCIJf9Iq1t2O1d6.js" id="asciicast-fXq8l0d6txMCIJf9Iq1t2O1d6" async="true"></script>
+*brain-even:*
 
 [![asciicast](https://asciinema.org/a/fXq8l0d6txMCIJf9Iq1t2O1d6.svg)](https://asciinema.org/a/fXq8l0d6txMCIJf9Iq1t2O1d6)
 
-[asciinema 6th step](https://asciinema.org/a/dE7Ek4YyxutpnMmd8wOhFAGGP)
+*brain-calc:*
 
-[asciinema 7th step](https://asciinema.org/a/8UinL7sEUbIhdKugrX9UADxhI)
+[![asciicast](https://asciinema.org/a/8gCNJipWdE2Xe3SFp4qvyguh4.svg)](https://asciinema.org/a/8gCNJipWdE2Xe3SFp4qvyguh4)
 
-[asciinema 8th step](https://asciinema.org/a/LBgH7SnnJpLx2kheuVuuf4gM0)
+*brain-gcd:*
 
-[asciinema 9th step](https://asciinema.org/a/4EnO2ICaAaOndmfyLUTQUSoi0)
+[![asciicast](https://asciinema.org/a/cJtmdp2wRfSLbHS9l3YkKL4vT.svg)](https://asciinema.org/a/cJtmdp2wRfSLbHS9l3YkKL4vT)
+
+*brain-prime:*
+
+[![asciicast](https://asciinema.org/a/DDzImHZv9btdlOXlLiJmArjAo.svg)](https://asciinema.org/a/DDzImHZv9btdlOXlLiJmArjAo)
+
+*brain-progression:*
+
+[![asciicast](https://asciinema.org/a/g5KLeNCcGUJW0Dtn3Dy8BMfoq.svg)](https://asciinema.org/a/g5KLeNCcGUJW0Dtn3Dy8BMfoq)
+
