@@ -12,18 +12,25 @@ To install the game follow the instructions.
 `git clone https://github.com/closertoreal/python-project-49.git`
 
 3. Install games with Makefile:
+
 `make setup`
 
-4. To launch game type the name of the game:
+5. To launch game type the name of the game:
+
 `brain-even`
+
 `brain-calc`
+
 `brain-gcd`
+
 `brain-prime`
+
 `brain-progression`
 
-5. Each game will ask you a question and you need to answer correctly. 
 
-6. Watch games in action in the videos below:
+7. Each game will ask you questions and you need to answer correctly. 
+
+8. Watch games in action in the videos below:
 
 *brain-even:*
 
