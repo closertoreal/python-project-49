@@ -1,19 +1,21 @@
 from random import randint
 
 
-question = 'Answer "yes" if the number is even, otherwise answer "no".'
+QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def calculate_answer(expression):
+def is_even(expression):
     if expression % 2 == 0:
-        answer = 'yes'
+        return True
     else:
-        answer = 'no'
-    return answer
+        return False
 
 
-def create_question():
+def create_round_data():
     expression = randint(1, 100)
-    right_answer = calculate_answer(expression)
+    if is_even(expression):
+        right_answer = 'yes'
+    else:
+        right_answer = 'no'
     expression = str(expression)
     return expression, right_answer

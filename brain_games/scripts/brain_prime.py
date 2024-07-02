@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 
 
-from brain_games import brain_interface
-from brain_games.games.brain_prime import question, create_question
+from brain_games.brain_interface import run_game
+from brain_games.games.brain_prime import QUESTION, create_round_data
 
 
 def main():
-    brain_interface.main(question, create_question)
+    run_game(QUESTION, create_round_data)
 
 
 if __name__ == '__main__':
