@@ -9,7 +9,7 @@ To install the game follow the instructions.
 
 1. First of all clone repo to your local machine:
    
-`git clone https://github.com/closertoreal/python-project-49.git`
+~~~git clone https://github.com/closertoreal/python-project-49.git~~~
 
 3. Install games with Makefile:
 
