@@ -27,7 +27,7 @@ To install the game follow the instructions.
 brain-even:
 <script src="https://asciinema.org/a/fXq8l0d6txMCIJf9Iq1t2O1d6.js" id="asciicast-fXq8l0d6txMCIJf9Iq1t2O1d6" async="true"></script>
 
-[asciinema 5th step](https://asciinema.org/a/OS6uT7xbTTRs4ak5CLlbK8HdV)
+[![asciicast](https://asciinema.org/a/fXq8l0d6txMCIJf9Iq1t2O1d6.svg)](https://asciinema.org/a/fXq8l0d6txMCIJf9Iq1t2O1d6)
 
 [asciinema 6th step](https://asciinema.org/a/dE7Ek4YyxutpnMmd8wOhFAGGP)
 
