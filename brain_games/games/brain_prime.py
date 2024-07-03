@@ -4,15 +4,13 @@ QUESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(expression):
-    if expression % 2 == 0 and expression != 2:
-        answer = False
-    elif expression % 3 == 0 and expression != 3:
-        answer = False
-    elif expression % 5 == 0 and expression != 5:
-        answer = False
-    else:
-        answer = True
-    return answer
+    return (
+        not (
+            expression % 2 == 0 and expression != 2
+            or expression % 3 == 0 and expression != 3
+            or expression % 5 == 0 and expression != 5
+        )
+    )
 
 
 def create_round_data():

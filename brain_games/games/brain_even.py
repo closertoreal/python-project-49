@@ -5,10 +5,7 @@ QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even(expression):
-    if expression % 2 == 0:
-        return True
-    else:
-        return False
+    return expression % 2 == 0
 
 
 def create_round_data():
